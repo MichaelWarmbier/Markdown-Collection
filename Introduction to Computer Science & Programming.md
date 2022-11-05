@@ -662,7 +662,6 @@ Output:
 5
 6
 ```
-
-##### Note: it is _very_ important to always remember that array indexes start at zero. 
+###### Note: it is _very_ important to always remember that array indexes start at zero. 
 <br>
 Arrays aren't always very useful on their own, however, they are much more applicable to programming when used in conjunction with **loops**.
