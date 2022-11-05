@@ -1,7 +1,7 @@
 # Introduction to Computer Science & Programming
 
 **Author**: Michael Warmbier<br>
-**Last Updated**: November 3rd, 2022<br>
+**Last Updated**: November 5th, 2022<br>
 **Version**: In-Progress
 
 ### What is this document about?
@@ -18,17 +18,17 @@ All the implementational portions included use code and code examples intended f
 
 There are many concepts that one should be familiar _before_ programming. It might seem unnecessary, but understanding these concepts to some degree prior to getting into things may save you some confusion when trying to understand more complex topics down the line. Being a programmer does not just mean syntax-familiarity; it also means understanding how things work and how to take advantage of the tools you have.
 
-  * [1.1: Definition of Computer Science](#11--definition-of-computer-science)
-  * [1.2: What is Programming?](#12--what-is-programming-)
-  * [1.3: Computer/Programming Language Hierachy](#13--computer-programming-language-hierachy)
-  * [1.3: Binary, Hexadecimal & Numerical Systems](#13--binary--hexadecimal---numerical-systems)
-  * [1.4: Compilers and IDEs](#14--compilers-and-ides)
+  * [1.1.0: Definition of Computer Science](#11--definition-of-computer-science)
+  * [1.2.0: What is Programming?](#12--what-is-programming-)
+  * [1.3.0: Computer/Programming Language Hierachy](#13--computer-programming-language-hierachy)
+  * [1.3.0: Binary, Hexadecimal & Numerical Systems](#13--binary--hexadecimal---numerical-systems)
+  * [1.4.0: Compilers and IDEs](#14--compilers-and-ides)
   * [1.5: Languages Compiled, Assembled and Interpreted](#15--languages-compiled--assembled-and-interpreted)
-  * [1.6: Hardware vs Software](#16--hardware-vs-software)
-  * [1.7: Computer as Hardware](#17--computer-as-hardware)
-  * [1.8: Scope of CompSci: What Can We Do?](#18--scope-of-compsci--what-can-we-do-)
+  * [1.6.0: Hardware vs Software](#16--hardware-vs-software)
+  * [1.7.0: Computers as Hardware](#17--computer-as-hardware)
+  * [1.8.0: Scope of CompSci: What Can We Do?](#18--scope-of-compsci--what-can-we-do-)
 
-## 1.1: Definition of Computer Science
+## 1.01: Definition of Computer Science
 
 In literal terms, Computer Science is **the study of computation, automation and information[¹](https://en.wikipedia.org/wiki/Computer_science)**. This, however, is an oversimplification of one of the broadest fields of study available. Computer Science contains a large scope of topics, most of which have their own dedicated professionals and careers. These disciplines can be theoretical or practical, and are not limited to the use or capabilities of computers themselves. 
 
@@ -36,13 +36,13 @@ Many fields within _Computer Science_ may be associated with others, such as Mat
 
 ###### ¹ https://en.wikipedia.org/wiki/Computer_science
 
-## 1.2: What is Programming?
+## 1.02: What is Programming?
 
 _Programming_, essentially **writing instructions to get a result from a machine**, is a subcategory of Computer Science focused on creating _software_ used for practically any digital application; including, but not limited to scientific, mathematical and personal use.
 
 Programming is used as a tool to create solutions using computation. Instructions are written by a _programmer_ and then through a system generally described as _compilation_, these instuctions are then converted into digital logic which is designed for use by physical _hardware_ to perform actions that lead to the desired result. In simplification, a program "speaks" to a computer and tells it what to do.
 
-## 1.3: Computer/Programming Language Hierachy
+## 1.03: Computer/Programming Language Hierachy
 
 The _programming language_ hierachy is a simplification of the process described in the previous section, wherein instructions are eventually read by a machine.
 
@@ -57,16 +57,16 @@ The _programming language_ hierachy is a simplification of the process described
 **High-Level Language**: a language that includes complex programming tools included within itself which typically would rely on large sums of low-level code, along with a more easy-to-read _syntax_. Concepts from low-level languages are built upon and simplified as much smaller and user-friendly instructions.
 
 ```
-List of Popular High-Level Programming Languages
-------------------------------------------------
-	• C++ | C# | C
-	• JavaScript
- 	• Java
-	• Python
-	• PHP
+Some Popular High-Level Programming Languages
+----------------------------------------------
+C++ | C# | C
+JavaScript
+Java
+Python
+PHP
 ```
 
-## 1.3: Binary, Hexadecimal & Numerical Systems
+## 1.04: Binary, Hexadecimal & Numerical Systems
 
 A _numerical system_ is a system for representing numbers. However, unlike other systems such as Roman Numerals, _positional numerical systems_, including our very own _decimal_ system, or base 10, are significantly easier for computers to read and understand. To simplify this process even further, we only ask that computers read as little as two digits `[0 - 1]`, rather than our human-standard ten `[0 - 9]`.
 
@@ -103,17 +103,17 @@ Hexadecimal | 16     | 0 - 9, A - F
 
 **Byte (B):** eight binary digits. Each byte can have a range of `[0 - 255]`, or 256 possible values.
 
-**Kilobyte (kB):** A thousand bytes. Sometimes represented as a **kibibyte (KB)**, or 1024 bytes instead.
+**Kilobyte (kB):** one thousand bytes. Sometimes represented as a **kibibyte (KB)**, or 1024 bytes instead.
 
-**Megabyte (MB):** A million bytes.
+**Megabyte (MB):** one million bytes.
 
-**Gigabyte (GB):** A billion bytes.
+**Gigabyte (GB):** one billion bytes.
 
-**Terrabyte (TB):** A trillion bytes.
+**Terrabyte (TB):** one trillion bytes.
 
 <p>
 
-## 1.4: Compilers and IDEs
+## 1.05: Compilers and IDEs
 
 An _integrated development environment_, or _IDE_, is a specific type of software that provides an environment and tools for developers and/or programmers. It's important to note, however, that an IDE is _not_ what compiles code. While some IDEs (such as Visual Studio) may have a compiler built into them, the compiler may also be a separate application all together. 
 
@@ -129,7 +129,7 @@ HTML: .html or .htm
 ```
 ###### Note: HTML is _not_ a programming language.
 
-## 1.5: Languages Compiled, Assembled and Interpreted
+## 1.06: Languages Compiled, Assembled and Interpreted
 
 While code being _compiled_ is a general description of what happens, there are differences in how this occurs in different contexts and programming languages.
 
@@ -139,7 +139,7 @@ While code being _compiled_ is a general description of what happens, there are 
 
 **Assembled Languages**: An assembled languange is one that may be directly translated to machine code, through the use of an assembler application. This is typically only used in the context of the assembly language.
 
-## 1.6: Hardware vs Software
+## 1.06: Hardware vs Software
 
 _Software and hardware_ are both important aspects of computers that allow them to operate properly. While hardware is much more explicit, software is a more general term; adware, malware and firmware are all types of software.
 
@@ -149,7 +149,7 @@ While the suffix _ware_ is meant to refer to tools, it is easier to consider it 
 
 **Software**: digital tools and applications that a computer can run and utilize. Software, unlike hardware (typically), has the potential to be malicious.
 
-## 1.7: Computers as Hardware
+## 1.07: Computers as Hardware
 
 The inside of a typical desktop computer can be easily isolated to a small number of parts that work together to maintain the machine.
 
@@ -188,11 +188,13 @@ The inside of a typical desktop computer can be easily isolated to a small numbe
 ###### Other devices, such as CPU cooling fans and wifi adapers may also be attached to a computer. Regardless, those listed above are the most significant to understand.
 
 
-## 1.8: Scope of CompSci: What Can We Do?
+## 1.08: Scope of CompSci: What Can We Do?
 
 The scope map of Computer Science is broad. There are many disciplines to explore, study and interact with. Below are a list of a few of the significant and/or interesting ones.
 
-![map](https://i.imgur.com/YobenhI.jpg)
+<p align="center">
+  <img src="https://i.imgur.com/YobenhI.jpg">
+</p>
 
 ###### Credit: [Domain of Science](https://www.flickr.com/photos/95869671@N08/36231833334)
 
@@ -232,9 +234,9 @@ Programming is logical in nature. This means that understanding how everything y
 
 All code blocks within this section are, unless stated otherwise, written in C++.
 
-tba: table of contents
+**tba: table of contents**
 
-## 2.1: Getting Started
+## 2.01: Getting Started
 
 Choosing a tool, or a set of them, for writing and compiling code may seem like a simple and almost irrelevant task; if the result is the same, does it even matter? However the environment that you choose may greatly impact your ability to understand what you're doing. It may seem appealing to choose an IDE such as _Visual Studio's_ to start working, since it's a very well-known and mainstream application. Maybe you'd prefer a cloud-based compiler, like _Replit_, which is easy to get started with and lets you save your code and access it from anywhere. Regardless of what you choose make sure you don't feel overwhelmed.
 
@@ -242,9 +244,32 @@ Most IDEs with built-in compilers will compile the code when you press "run". Th
 
 ![img](https://i.imgur.com/oXbGKjf.png)
 
+
 ###### The Replit C++ IDE. On the right-hand side is the terminal output, on the left is the coding window and file explorer.
 
-## 2.2: Programming Priors
+## 2.02: Process of Compilation
+
+There are several types of file extensions that C++ compilers look for when creating code. At first, however, you will just be using one: `.cpp`.
+
+C++ has a notoriously complex compilation process. However, this is mainly attributed to (optional) manual compilation. When simplified, the process is much easier to understand:
+
+### Step 1: Preprocessing
+
+There are several aspects of C++ that rely on preprocessing. Preprocessed code is code which is desginated to be added later. You often see this when using `#include` to include outside code. This step takes the files you asked for and inserts their code into the main document for you.
+
+### Step 2: Compilation
+
+After all the code is in one place, it is then compiled into Assembly code. Once compiled, it is assembled into binary. These files are referred to as object files.
+
+### Step 3: Linking
+
+Once compiled, the object files are then linked together for a final output. This output is either a **library** file, a file meant to house code to quickly be used in future projects, or an **executable**, a file specifically for executing an application.
+
+### Result
+
+When using an IDE built-in with a compiler, this entire process is done behind the scenes. When running your code, it is compiled and then opened, usually with a **command prompt** or **terminal**.
+
+## 2.03: Programming Priors
 
 Before you begin writing in any programming language, you should understand some common traits each of them _may_ include.
 
@@ -323,7 +348,7 @@ if x:
 ```
 ###### Note: this code is written in Python
 
-## 2.3: Boilerplate Code
+## 2.04: Boilerplate Code
 
 _Boilerplate code_ is code which is repetitive and obligatory. It's the type of code you will use over and over when programming. In the case of C++, its starter boilerplate code looks like this:
 
@@ -350,15 +375,15 @@ More details on functions and how they operate will be described in a later sect
 
 ### Header Code
 
-Above your main function is code that is meant to provide information about your program. It does not contain code that the compiler will try to run automatically. This particular code is referred to as **header code**. The `#include` statement is part of this header code.
+Above your main function is code that is meant to provide information about your program. It does not contain code that the compiler will try to run automatically. This particular code is referred to as **header code**. Preprocessor statements, such as `#include` statements, are part of this header code. This code may also be isolated in its own **header file** with the extension `.h` rather than `.cpp` and included using the syntax `#include "path_to_file.h"`.
 
 ### Include
 
-The **include** keyword is used to attach outside documents to your program. In this case, we included a standard **library**, a prewritten code packaged for us to use, named `iostream`. This library is included with our install of a C++ compiler and is very important for a lot of code we use when starting off.
+As mentioned in the "Process of Compilation" section, the **include** keyword is used to attach outside documents to your program through preprocessing. In this case, we included a standard **library**, a prewritten code packaged for us to use, named `iostream`. This library is almost always included with our install of a C++ compiler and is very important for a lot of the code we use when starting off.
 
 `iostream` stands for "input-output stream" and will be what we rely on for input and output when beginner programming.
 
-## 2.4: Comments
+## 2.05: Comments
 
 In coding, a **comment** is a portion of our document that is ignored when compiled. Its purpose is to create notes for either our future use or the future use of someone else who looks at our code.
 
@@ -376,7 +401,7 @@ Typing `/*` will comments out _everything_ after it. That is, until it is connec
 /* I'm making a note here: huge success */ cout << "hello" << endl;
 ```
 
-## 2.5: Output
+## 2.06: Output
 
 In C++, there are two primary ways to print information to the screen.
 
@@ -387,7 +412,7 @@ And `cout`, which standsa for **character output**, outputs anything between it 
 Both are contained inside the `<iostream>` library and require it to be used:
 
 ```cpp
-printf("Hello")
+printf("Hello");
 cout << "World";
 ```
 
@@ -433,7 +458,7 @@ Output:
 156
 ```
 
-## 2.6: Variables
+## 2.07: Variables
 
 A **variable** is a reservation in memory which allows us to store and manipulate data. In C++, variables have _specific types_ that tell us what kind of data they are. They can also be defined as **constants**.
 
@@ -500,7 +525,7 @@ The data type for a variable is only declared _once_. Afterwhich, any other call
 
 ### Identifiers
 
-An identifier is a name for some element of code that can be whatever you want, within reason. Specifically, identifiers can _not_ start with a number, but may start with an underscore `_` symbol. They cannot include special or punctuational symbols, such as `@ ! % ? &`:
+An identifier is a name for some element of code that can be whatever you want, within reason. Specifically, identifiers can _not_ start with a number, but may start with an underscore `_` symbol. They cannot include special or punctuational symbols, such as `@ ! % ? &`. They also are case sensitive; they must be referred to exactly how they were originally named:
 
 ```cpp
 // Valid identifiers:
@@ -530,7 +555,11 @@ c = x;
 
 This code would cause an **error**, since a variable with the type `char` may not be defined with type `int`.
 
-## 2.7: Escape Sequences
+## 2.10: Arithmetic
+
+tba// 
+
+## 2.09: Escape Sequences
 
 Escape sequences are a string of characters that represent a single unique character that cannot normally be typed. Despite being made of several characters, it only represents one. Ordinarily, however, single-quotes may not contain more than one character:
 
@@ -566,7 +595,7 @@ Hello
 World
 ```
 
-## 2.8: ASCII Standard
+## 2.10: ASCII Standard
 
 The **American Standard Code for Information Interchange**, or **ASCII**, is the standard character encoding method used by computers. 
 
@@ -590,3 +619,50 @@ Below is the full table of ASCII characters, including its extended entries.
 ![img](https://microsoft.github.io/makecode-csp/static/010b16b23ea4e9d9474b1d6bb4969a52/518fe/ascii-table.jpg)
 
 ###### Note: the `char` keyword is only able to store values up to a byte in size. This is because the ASCII table only has 255 values, the maximum amount of values storable in a byte.
+
+## 2.11: Arrays
+
+In its most simplified application, an **array** is a variable that may store more than one variable (of the same type). It is defined by giving a variable a size:
+
+```cpp
+int myArr[5];
+```
+
+In this example, we created an array with a total potential of _five_ items. It can now be defined using brackets `{ }` containing a set of values.
+
+```cpp
+myArray[5] = {1, 2, 3, 4, 5};
+```
+
+Accessing an array, however, is different than defining it. When _defining_ an array, we use the square brackets `[ ]` to contain its size. When _reading_ or _storing data_ in an array, we use the brackets to access what we're after. 
+
+```cpp
+cout << myArray[4]; // reading from an array value
+myArray[4] = 12;    // storing a value in an array
+```
+
+This will access the _fifth_ element in the array. This is because arrays begin at index _zero_. If we have an array with `[10]` elements, then the range of which we can access the array is `[0] - [9]`. So, in the case above, the output would be:
+
+```
+5
+```
+
+Arrays can also be accessed using variables, such as with this example:
+
+```cpp
+int numbers[10] = {1, 2, 3, 4, 5, 6, 7, 8 , 9, 10};
+int index = 4;
+cout << numbers[index] << endl;
+index++;
+cout << numbers[index];
+```
+
+Output:
+```
+5
+6
+```
+
+##### Note: it is _very_ important to always remember that array indexes start at zero. 
+<br>
+Arrays aren't always very useful on their own, however, they are much more applicable to programming when used in conjunction with **loops**.
