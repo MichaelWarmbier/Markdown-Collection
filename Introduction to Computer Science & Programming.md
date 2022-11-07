@@ -1,7 +1,7 @@
 # Introduction to Computer Science & Programming
 
 **Author**: Michael Warmbier<br>
-**Last Updated**: November 5th, 2022<br>
+**Last Updated**: November 6th, 2022<br>
 **Version**: In-Progress
 
 ### What is this document about?
@@ -555,10 +555,6 @@ c = x;
 
 This code would cause an **error**, since a variable with the type `char` may not be defined with type `int`.
 
-## 2.10: Arithmetic
-
-tba// 
-
 ## 2.09: Escape Sequences
 
 Escape sequences are a string of characters that represent a single unique character that cannot normally be typed. Despite being made of several characters, it only represents one. Ordinarily, however, single-quotes may not contain more than one character:
@@ -595,7 +591,9 @@ Hello
 World
 ```
 
-## 2.10: ASCII Standard
+## 2.10 Arithmetic
+
+## 2.11: ASCII Standard
 
 The **American Standard Code for Information Interchange**, or **ASCII**, is the standard character encoding method used by computers. 
 
@@ -620,7 +618,7 @@ Below is the full table of ASCII characters, including its extended entries.
 
 ###### Note: the `char` keyword is only able to store values up to a byte in size. This is because the ASCII table only has 255 values, the maximum amount of values storable in a byte.
 
-## 2.11: Arrays
+## 2.12: Arrays
 
 In its most simplified application, an **array** is a variable that may store more than one variable (of the same type). It is defined by giving a variable a size:
 
@@ -663,5 +661,182 @@ Output:
 6
 ```
 ###### Note: it is _very_ important to always remember that array indexes start at zero. 
-<br>
-Arrays aren't always very useful on their own, however, they are much more applicable to programming when used in conjunction with **loops**.
+
+## 2.13: Booleans and Conditional Logic
+
+Now that we've gone over topics such as arithmetic, variables and arrays, there are much more complex topics over the horizon that make use of their application. However, before we dive into that, there are a few more closely related and important subjects that must be fundamental understood: **booleans**.
+
+### Booleans
+
+Booleans are rooted in binary itself. Binary digits, limited to a simple two values, may only therefore be: `1` or `0`, **on** or **off**. More importantly for programming, **true** or **false**.
+
+A statement that relies on comparisons and/or logic will eventually lead to a conclusion; either the statement is **true**, or the statement is **false**. Boolean logic represents those values as integers. In the case of most programming languages, `0` is false, and any **non-zero** number is true. Take the following statement for example:
+
+```
+32 < 5
+```
+
+This statement is **false**. Because this statement is false, it is evaluated as a zero. If that statement were stored into a variable, it would be represented as such:
+
+```cpp
+x = 32 < 5;
+cout << x;
+```
+###### Tip: Similar to `endl`, the `<iostream>` library contains an object called `boolalpha`. When placed _prior_ to a bool type variable in output it will replace the integer representation with its text alternative: true or false. This may be useful for reading code you are trying to test.
+
+Output:
+
+```
+0
+```
+
+But what type of variable is `x` in this context? While integers may store values that are either zero or non-zero, its good practice to store true or false values in **boolean variables** or `bool`.
+
+The **boolean data type** may store two values: `1` and `0`, which can also be represented by the keywords `true` or `false`. We use booleans to store the outcome of comparative operations. We can also use them to store the state of some element of our program:
+
+```cpp
+bool myStatus = true;
+
+// do something here
+
+myStatus = false;
+```
+
+In the above example, we store the status of something about our code until later on when we change it to false. With simple linear code, this isn't very helpful. To do more with our code we need to allow it to make decisions based on certain **conditions**.
+
+### If Statements, Else Statements
+
+Previously, we briefly used **if statements** to show an example of code blocks in practice. Now, we're using them as their intended. If statements are statements which evaluate a **condition** and check to see if its true or not. If it is true, the code contained within the if statement's scope is then executed:
+
+```cpp
+bool myCondition[2] = [true, false]; // An array of two different bool values
+
+if (myCondition[0]) { 
+  /* Any code contained within the brackets of this if statement will run, because myCondition[0] is true */
+   }
+
+if (myCondition[1]) // Any code after this if statement will not run, because myCondition[1] is false.
+```
+###### Note: If statements will only consider the first statement proceeding them, unless they are instead followed by a code block. In this case, the entire block will be considered part of its scope.
+
+We can also create **else statements**. These statements _must_ proceed an if statement, and will run its respective code _only_ in the case that the if statements condition is false.
+
+```cpp
+if (false) {
+  // This code block can't run, because the condition is false.
+}
+else {
+  // This code will run, because the condition was false.
+}
+```
+
+Additionally, you can chain the two together and create multiple conditions:
+
+```cpp
+if (boolVar[0]) { /* this code will run if boolVar[0] is true */ }
+else if (boolVar[1]) { /* this code will run if boolVar[1] is true */ }
+else { /* this code will only run if both boolVar[0] and boolVar[2] are false */ }
+```
+
+When chaining if and else statements, remember that the first condition to be met will be the code that executes. If you want the code to execute for every condition that is met, you must use multiple if statements:
+
+```cpp
+if (true) { /* this code will run */ }
+if (true) { /* this code will run, it is a separate if statement */ }
+else { /* this code will not run, it is attached to an if statement that has a true condition */ }
+```
+
+Something we also covered previously was a **conditional expression**. A conditional expression is an express which will evaluate to either true or false. This is done by using certain **comparison operators**. In our previous example `32 < 5`, we used the less than `<` operator.
+
+ ### Comparison Operators
+
+ Comparison Operator | Name | Function
+---------------------|------|---
+ `<`| Less Than | Returns true if the left operand is smaller than the right operand.
+ `>`| Greater Than |Returns true if the left operand is larger than the right operand.
+ `==`| Equal To | Returns true if both operands are equal.
+ `!=`| NOT Equal to | Returns true if both operands are **not** equal.
+
+ Less than `<` and greater than `>` work exactly as you may expect. Both operators are used to determine of the operands are less than or greater than one another. 
+
+ Equal to, or `==` should _not_ be confused with `=`, the assignment operator. The assignment operators is used for setting a value to a variable, the equal to operator is used for determining if two values are equivalent.
+
+ Not Equal two looks for the opposite result. This means that if both operands are _not_ equal then the result will be true rather than false.
+
+```cpp
+cout << (16 < 19) << endl;  // Is 16 less than 19?
+cout << (16 > 19) << endl;  // Is 16 more than 19?
+cout << (16 == 19) << endl; // Is 16 the same as 19?
+cout << (16 != 19) << endl; // Is 16 different from 19?
+```
+
+Output:
+```
+1
+0
+0
+1
+```
+
+In addition to comparison operators, there are operators that allow us to prefer **boolean logic**, logic regarding true or false values, on expressions.
+
+### Logical Operators
+
+ Logical Operator | Name | Function
+---------------------|------|---
+`!` | Negation, NOT | Negates the boolean value.
+`&&` | AND | Evaluates true if both booleans are true.
+`\|\|` | OR | Evaluates true if one of both booleans are true.
+
+The NOT `!` operator only relies on _one_ operand. Its job is to replace the value with its inverse. 
+
+```cpp
+bool myBool = true;
+cout << !myBool; // NOT myBool
+```
+
+Output:
+```
+0
+```
+
+The AND `&&` and `OR` operators are meant to make direct comparisons between two booleans. Remember, the result of comparison operators is a boolean value:
+
+```cpp
+if (3 < 4 || 6 < 2) cout << "OR" << endl; // Are one of these statements true?
+if (3 < 4 && 6 < 2) cout << "AND" << endl; // Are both of these statements true?
+```
+
+Output:
+```
+OR
+```
+###### Reminder: if statements will only execute their code if they evaluate to true.
+
+Complex boolean logic can be difficult to trace. Remember, however, that an operator _only_ takes its two adjacent operands. Additionally, these types of expressions still follow the same rules as arithmetic ones: parenthesis take priority.
+
+Consider the following question:
+
+```
+Determine the output of the following code:
+
+bool myBool = ((3 < 8) && !(6 == 14));
+cout << myBool;
+```
+
+Let's evaluate this. To start, let us isolate the parenthesis containing the smallest sub-expressions:
+
+The expression `(3 < 8)` evaluates to **true**, because `3` _is_ less than `8`.<br>
+The expression `(6 == 14)` evaluates to **false**, because `6` _does not_ equal `14`.
+
+Now replace those expressions with their evaluated results:
+
+```
+(true && !false)
+```
+
+With this, it is much easier to determine our output. The `!` operator negates the boolean value of the operand that proceeds it. This means that `!false` evalautes to `true`.
+
+Our resulting expression, `(true && true)`, then checks if both operands of `&&` are true, which they are.
+
+Because of this, we can confidently say that the output is `1`, the numerical representation of `true`.
