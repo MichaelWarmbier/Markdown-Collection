@@ -1,5 +1,7 @@
 # Logical Problem Solving
 
+&ensp;This document serves as a short lesson on solving complex problems and the importance of utilizing key information provided to do so.
+
 - [Logical Problem Solving](#logical-problem-solving)
   * [Breakdown of Logic](#breakdown-of-logic)
   * [Step By Step Programming](#step-by-step-programming)
@@ -9,11 +11,12 @@
   * [Troubleshooting](#troubleshooting)
   * [Conclusion](#conclusion)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+<p align="center">Written by Michael Warmbier<br>
+December 12th, 2022</p>
 
 ## Breakdown of Logic
 
-&ensp;A term we use frequently when describing solutions to problems, refers to the validity proven by reasoning reliant on formal rules, whether defined by nature or the human mind. With computers, all logic resolves to simple _true_ or _false_ questions. The answers to these questions provide information to the machine that determine its actions. Programmers write _programs_ that answer these questions.
+&ensp;Logic is a term we use frequently when describing solutions to problems, refers to the validity proven by reasoning reliant on formal rules, whether defined by nature or the human mind. With computers, all logic resolves to simple _true_ or _false_ questions. The answers to these questions provide information to the machine that determine its actions. Programmers write _programs_ that answer these questions.
 
 This type of reasoning is purely theoretically and overly formal, but we can use it to make a thematically appropriate _logical conclusion_ that if programs rely on providing gradual instructions, then we can represent those instructions linguistically as well.
 
@@ -154,4 +157,4 @@ In this case, we got lucky; all of this information was provided to us. But what
 
 ## Conclusion
 
-&ensp;The purpose of this document was to emphasize a lesson many students often ignore early on in their studies, only to need later on in their career. A good programmer does not rely on _only_ knowledge. Understanding and breaking down logical problems and troubleshooting properly are necessary skills to prevent being halting in practice.
+&ensp;Hopefully this (very non-formal) document may emphasize a lesson many students often ignore early on in their studies, only to need later on in their career. A good programmer does not rely on _only_ knowledge. Understanding and breaking down logical problems and troubleshooting properly are necessary skills to prevent being halted significantly in practice.
