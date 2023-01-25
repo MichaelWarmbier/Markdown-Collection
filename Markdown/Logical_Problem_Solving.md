@@ -1,6 +1,6 @@
 # Logical Problem Solving
 
-&ensp;This document serves as a short lesson on solving complex problems and the importance of utilizing key information provided to do so.
+&ensp;The goal of this document is to provide information and to educate individuals on the importance of utilizing both critical thinking and all available tools when faced with programmatic problems.
 
 - [Logical Problem Solving](#logical-problem-solving)
   * [Breakdown of Logic](#breakdown-of-logic)
@@ -9,7 +9,8 @@
     + [Translating Language Into Code](#translating-language-into-code)
   * [Translating Complex Language Into Simple Language](#translating-complex-language-into-simple-language)
   * [Troubleshooting](#troubleshooting)
-  * [Conclusion](#conclusion)
+  * [Documenting Code](#documenting-code)
+  * [Note Taking Reference](#note-taking-reference)
 
 <p align="center">Written by Michael Warmbier<br>
 December 12th, 2022</p>
@@ -49,7 +50,7 @@ By being more specific in your phrasing you may prevent more mistakes. For examp
 
 ### Translating Language Into Code
 
-When it comes to turning language into code, implementation is easy. Given the task:
+The process of translating human language into code is often the easiest. Given the task:
 
 ```
 - Define a function, isEven(), which which takes an integer argument and returns a boolean value
@@ -65,7 +66,9 @@ function isEven(integer)
   return boolean
 ```
 
-This pseudo-code is useful because it may be applied in the context of nearly any high-level programming language (Note that, just like a typical exam problem, the expression to create the evaluation would be up to you to determine).
+This pseudo-code is useful because it may be applied in the context of nearly any high-level programming language.
+
+**Note**: just like a typical exam problem, the expression to create the evaluation would be up to you to determine.
 
 ```C++
 int isEven(int operand) {          // Step 1
@@ -87,19 +90,33 @@ function isEven(operand) {        // Step 1
   return eval;                    // Step 3
 }
 ```
+###### Example in JavaScript
 
 ## Translating Complex Language Into Simple Language
 
-&ensp;It's common for questions given in college examinations and courses to be difficult to decipher and provided through blurbs of text. You may get a problem like this:
+&ensp;It's common for questions given in college examinations and courses to be difficult to decipher and provided through blurbs of text. You may get a problem such as this:
 
 ```
-"Functions are useful for completing simple tasks. For example, returning the parity of a number. Your task is to create a function that utilizes an integer and returns a boolean value informing the user on whether or not that number is even"
+"Functions are useful for completing simple tasks. 
+For example, returning the parity of a number. 
+Your task is to create a function that utilizes an
+integer and returns a boolean value informing the user 
+on whether or not that number is even"
 ```
 
 This is the same problem as above, but prior to being broken down into steps. It's much harder to keep track of key concepts and words. This example is small, but you may imagine how much more confusing this may be when provided with larger questions:
 
 ```
-"Create a UEmployee class that contains member variables for the university employee name and salary. The UEmployee class should contain member methods for returning the employee name and salary. Create Faculty and Staff classes that inherit the UEmployee class. The Faculty class should include members for storing and returning the department name. The Staff class should include members for storing and returning the job title. Write a runner program that creates one instance of each class and prints all of the data for each object" (Java)
+"Create a UEmployee class that contains member variables
+for the university employee name and salary. The
+UEmployee class should contain member methods for
+returning the employee name and salary. Create Faculty
+and Staff classes that inherit the UEmployee class. The 
+Faculty class should include members for storing and
+returning the department name. The Staff class should
+include members for storing and returning the job title.
+Write a runner program that creates one instance of each
+class and prints all of the data for each object" (Java)
 ```
 
 Broken down into easier to read steps and notes:
@@ -153,8 +170,42 @@ This error comes from an error returned by Unity. Not every programmer uses Unit
 - `error CS19455`: The error code, which may be directly searched for.<br>
 - `Non-invocable member: 'Transform.position' cannot be used like a method`: A description of the error, which states that a member, which may not be called, is being misused as a method when it isn't one.
 
-In this case, we got lucky; all of this information was provided to us. But what about an error where none of it is? What if, we get an error that just plainly states `core dumped` or `ERROR: #F32200, #F32201, #F32202, #C3B1302, #EFEC33`. You _may_ find information online, but to do so likely requires your contextual issue. If your issue has not been asked about before, you will likely be required to inquire yourself. This means waiting for a response and halting your progress.
+In this specific example, all of this information was provided to us. This may not always be the case. Potentially, we could get an error such as `core dumped` or `ERROR: #F3220, #F32201, #FEFC33...`. These errors are, unfortunately, not very specific and don't leave us a lot to work with. If out of options, you may be inclined to share your problem with others who are more experienced. Doing this, however, will likely leave you waiting and halt your progress.
 
-## Conclusion
+Knowing how to use your IDEs built-in features is a fundemental skill. Features such as _break-points_ and _debug mode_ allow developers to trace problems and view the state of their program at specific points in runtime in order to narrow down the exact moment their issue occurs.
 
-&ensp;Hopefully this (very non-formal) document may emphasize a lesson many students often ignore early on in their studies, only to need later on in their career. A good programmer does not rely on _only_ knowledge. Understanding and breaking down logical problems and troubleshooting properly are necessary skills to prevent being halted significantly in practice.
+## Documenting Code
+
+&ensp;Documenting key elements of your code is important for yourself and potential future contributors when creating larger projects. It does not rely on standard naming conventions and relevant identifiers, however it is strongly encouraged to always title your data in an easy-tounderstand manner. By documenting your code, another tool for diagnosing problems is always readily available.
+
+Code documenting, similar to translating complex language into simplified language, is entirely a preference. However, it may be cruicial to create code that is clear to the viewer:
+
+`function identifier()`<br>
+**Description**: _description_<br>
+**Return Type**: _type_<br>
+**Arguments**: arg_namearg_type(range of expected values)<br>
+**Handled Errors:** _list of error titles_
+
+Documentation in this manner should also be done for data, such as variables and objects. Official documentation of this type applied to a real project can be seen on the official Game Maker Language documentation.
+
+## Note Taking Reference
+
+&ensp;Short-hand representations of logical concepts designed to resemble pseudo-code and make the translation from concept to implementation easier. This chart is intended to be a loose guide for the sake of understanding how to write good notes, not a catch-all reference associate with a standard practice.
+
+Concept | Linguistic Description
+--------|-----------------------
+Weak-Type Variables | VAR: identifier
+Strong-Type Variables | VAR: identifier<br>TYPE: type
+For Loop | FOR: iterator i; condition a; expression b
+While Loop | WHILE: condition a
+Do-While Loop | DO-WHILE: condition a
+Switch Statement | SWITCH: condition a <br>CASE-VALUES: range of case values<br>RESULT: description of cases
+If/Else Statements | IF condition a<br> THEN: relevant code<br>ELSE: fallback
+Else If | IF: condition a<br>THEN: relevant code<br>ELSE IF: condition b<br>THEN: relevant code
+Weak-Type Function | METHOD: identifier()<br>ARGS: arguments1, argument2, ..<br>DESC: description of function
+Strong-Type Function | METHOD: identifier()<br>RET: type<br>ARGS: argument1, argument2, ..<br> DESC: description of function
+Classes/Objects | OBJ: identifier
+Events | EVENT: event type<br>DESC: description of event
+
+###### **Important Note**: Attaching descriptors, such as LOCAL, ASYNC or MEMBER are also useful for more unique elements of code.
+
