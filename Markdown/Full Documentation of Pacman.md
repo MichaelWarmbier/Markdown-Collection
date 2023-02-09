@@ -50,8 +50,7 @@ Each ghost has a unique tile position they target depending on certain condition
 <br>
 
 
-<p align="center"><img src="
-https://github.com/MichaelWarmbier/Pacman_GML/blob/main/Documents/ModeInfographic.png?raw=true"></p>
+<p align="center"><img src="https://github.com/MichaelWarmbier/Pacman_GML/blob/main/Documents/ModeInfographic.png?raw=true"></p>
 
 ##### <p align="center">Infographic of all the different modes and events that change them.</p>
 
