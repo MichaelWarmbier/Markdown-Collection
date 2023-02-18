@@ -1,10 +1,10 @@
-# Logical Problem Solving
+# Logical Problem-Solving
 
 &ensp;The goal of this document is to provide information and to educate individuals on the importance of utilizing both critical thinking and all available tools when faced with programmatic problems.
 
-- [Logical Problem Solving](#logical-problem-solving)
+- [Logical Problem-Solving](#logical-problem-solving)
   * [Breakdown of Logic](#breakdown-of-logic)
-  * [Step By Step Programming](#step-by-step-programming)
+  * [Step-By-Step Programming](#step-by-step-programming)
     + [Translating Code Into Language](#translating-code-into-language)
     + [Translating Language Into Code](#translating-language-into-code)
   * [Translating Complex Language Into Simple Language](#translating-complex-language-into-simple-language)
@@ -21,9 +21,9 @@ December 12th, 2022</p>
 
 This type of reasoning is purely theoretically and overly formal, but we can use it to make a thematically appropriate _logical conclusion_ that if programs rely on providing gradual instructions, then we can represent those instructions linguistically as well.
 
-## Step By Step Programming
+## Step-By-Step Programming
 
-&ensp;Breaking down a program into digestible tasks is an absolutely necessary skill in problem solving. This could be done in several ways, including:
+&ensp;Breaking down a program into digestible tasks is an absolutely necessary skill in problem-solving. This could be done in several ways, including:
 
 - translating code into language
 - translating language into code
@@ -43,10 +43,10 @@ Can be described in a number of ways (in descending order of specificity):
 ```
 - Create a variable with a value of 3
 - Define an integer with the value of 3
-- Declare an integers and assign it an initial value of 3
+- Initiallize an integer with an initial value of 3
 ```
 
-By being more specific in your phrasing you may prevent more mistakes. For example, the first description in this list does not specify the _data type_, which may be important in a _strongly typed_ language such as C++ or TypeScript. Additionally, both the first and second descriptions in this list do _not_ specify that the value is declared initially, which may or may not be relevant to the task.
+By being more specific in your phrasing, you may prevent more mistakes. For example, the first description in this list does not specify the _data type_, which may be important in a _strongly typed_ language such as C++ or TypeScript. Additionally, both the first and second descriptions in this list do _not_ specify that the value is declared initially, which may or may not be relevant to the task.
 
 ### Translating Language Into Code
 
@@ -58,7 +58,7 @@ The process of translating human language into code is often the easiest. Given 
 - Return the evaluation
 ```
 
-This problem is broken down into three steps that may easily be written in _pseudo-code_:
+This problem is broken down into three steps that may easily be written in _pseudocode_:
 
 ```
 function isEven(integer) 
@@ -66,7 +66,7 @@ function isEven(integer)
   return boolean
 ```
 
-This pseudo-code is useful because it may be applied in the context of nearly any high-level programming language.
+This pseudocode is useful because it may be applied in the context of nearly any high-level programming language.
 
 **Note**: just like a typical exam problem, the expression to create the evaluation would be up to you to determine.
 
@@ -146,9 +146,9 @@ Broken down into easier to read steps and notes:
 * Variable names not specified
 ```
 
-Although longer, this version of the problem is much easier to isolate into sections and problems to solve one at a time. It makes use of notes to include information either excluded or implied, as well as white space and indentation similar to something like Python.
+Although longer, this version of the problem is much easier to isolate into sections and problems to solve one at a time. It makes use of notes to include information either excluded or implied, as well as white space and indentation, similar to something like Python.
 
-Depending on what you use to to write these steps down (either a specific application or through hand written notes) you may even highlight certain keywords, such as **getter** and **setter** so that you are sure to remember them.
+Depending on what you use to write these steps down (either a specific application or through handwritten notes) you may even highlight certain keywords, such as **getter** and **setter** so that you are sure to remember them.
 
 ## Troubleshooting
 
@@ -162,7 +162,7 @@ Given an error:
 Assets\Scripts\ScriptBlock\myScript.cs(432,17): error CS1955: Non-invocable member 'Transform.position' cannot be used like a method.
 ```
 
-In this example it's further emphasized how important it is to understand the relevant terminology.
+In this example, it is further emphasized how important it is to understand the relevant terminology.
 
 This error comes from an error returned by Unity. Not every programmer uses Unity, but enough of them understand the terminology provided that they can estimate a probable cause and possible offer a solution. Broken down:
 
@@ -172,13 +172,13 @@ This error comes from an error returned by Unity. Not every programmer uses Unit
 
 In this specific example, all of this information was provided to us. This may not always be the case. Potentially, we could get an error such as `core dumped` or `ERROR: #F3220, #F32201, #FEFC33...`. These errors are, unfortunately, not very specific and don't leave us a lot to work with. If out of options, you may be inclined to share your problem with others who are more experienced. Doing this, however, will likely leave you waiting and halt your progress.
 
-Knowing how to use your IDEs built-in features is a fundemental skill. Features such as _break-points_ and _debug mode_ allow developers to trace problems and view the state of their program at specific points in runtime in order to narrow down the exact moment their issue occurs.
+Knowing how to use your IDEs built-in features is a fundamental skill. Features such as _break-points_ and _debug mode_ allow developers to trace problems and view the state of their program at specific points in runtime in order to narrow down the exact moment their issue occurs.
 
 ## Documenting Code
 
-&ensp;Documenting key elements of your code is important for yourself and potential future contributors when creating larger projects. It does not rely on standard naming conventions and relevant identifiers, however it is strongly encouraged to always title your data in an easy-tounderstand manner. By documenting your code, another tool for diagnosing problems is always readily available.
+&ensp;Documenting key elements of your code is important for yourself and potential future contributors when creating larger projects. It does not rely on standard naming conventions and relevant identifiers, however it is strongly encouraged to always title your data in an easy-to-understand manner. By documenting your code, another tool for diagnosing problems is always readily available.
 
-Code documenting, similar to translating complex language into simplified language, is entirely a preference. However, it may be cruicial to create code that is clear to the viewer:
+Code documenting, similar to translating complex language into simplified language, is entirely a preference. However, it may be crucial to create code that is clear to the viewer:
 
 `function identifier()`<br>
 **Description**: _description_<br>
@@ -190,9 +190,9 @@ Documentation in this manner should also be done for data, such as variables and
 
 ## Note Taking Reference
 
-&ensp;Short-hand representations of logical concepts designed to resemble pseudo-code and make the translation from concept to implementation easier. This chart is intended to be a loose guide for the sake of understanding how to write good notes, not a catch-all reference associate with a standard practice.
+&ensp;Short-hand representations of logical concepts designed to resemble pseudocode and make the translation from concept to implementation easier. This chart is intended to be a loose guide for the sake of understanding how to write good notes, not a catch-all reference associated with a standard practice.
 
-Concept | Linguistic Description
+Concept | Note Form
 --------|-----------------------
 Weak-Type Variables | VAR: identifier
 Strong-Type Variables | VAR: identifier<br>TYPE: type

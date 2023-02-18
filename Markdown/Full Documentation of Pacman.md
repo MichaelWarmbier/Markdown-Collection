@@ -17,7 +17,10 @@
 
 ## History
 
-&emsp;&emsp;
+&emsp;&emsp;In 1980, Namco developed the now cult-classic arcade cabinet video game, _Pacman_. Created in Japan and later sold world-wide, its influence in both the then-relevant scope of video games was massive. Utilizing a more inclusively appealing atmosphere aimed at being appealing towards everyone, its success was massive.
+
+
+_Pacman_, or _Pac-Man_, was primarily developed by Toru Iwatani and programmed by Shigeo Funaki and Shigechi Ishimura. Though originally released in July of 1980, it received a world-wide release around December of the same year. It has since been considered to be part of the "maze chase" genre, a genre which it pionered. 
 
 <br><hr><br>
 
@@ -64,7 +67,7 @@ Level      | Scatter     | Chase     | Scatter    | Chase      | Scatter      | 
 2 - 4 | 7s | 20s | 7s | 20s | 5s | 17m 13s 140ms | 60ms | Forever
 5+ | 5s | 20s | 5s | 20s | 5s | 17m 17s 140ms | 60ms | Forever
 
-##### Chart Creation: [(_RetroGameMechanicsExplained_, Youtube 2019)](#work-cited)
+##### Chart Creator: [(_RetroGameMechanicsExplained_, Youtube 2019)](#work-cited)
 <br>
 
 This chart shows that the four first cycles between these two modes last a specific amount of time. Afterwards, the ghosts are stuck infinitely in chase mode. The fourth scatter mode is also extremely short, being about one frame of time.
